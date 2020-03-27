@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="Serilog" Version="2.9.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MFedatto.Wermo.ApiLibrary\MFedatto.Wermo.ApiLibrary.csproj" />
+	  <ProjectReference Include="..\MFedatto.Wermo.Domain\MFedatto.Wermo.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
